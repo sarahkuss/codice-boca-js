@@ -1,0 +1,71 @@
+/* CSS RESET */
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* BODY */
+body {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url(/assets/menu-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* MENU BAR */
+ul {
+  display: flex;
+  justify-content: space-around; /*adds equal amount of space around each li.. can also do center or space-between*/
+  width: 100%;
+  background-color: #333;
+  list-style-type: none; /*gets rid of dots*/
+}
+li {
+  color: white;
+  padding: 14px 16px;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1024px;
+  background-color: white;
+  margin: 7rem auto;
+  border: 5px solid #ffaf31;
+  border-radius: 15px 50px; /*makes it curved*/
+  padding: 0 15px;
+  background-image: url(/assets/700x700.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -190px; /*moves it up*/
+}
+
+header {
+  min-height: 200px;
+}
+h1 {
+  font-size: calc(3em + 2vw);
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+}
+
+/* MENU */
+.menu-list {
+  margin: 5rem auto;
+  column-count: 2;
+  column-gap: 20px;
+  padding: 0 5rem;
+}
+.menu-item {
+  padding: 0 1rem 1rem;
+  page-break-inside: avoid;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #a9a9a95c; /*5c gives transparency*/
+}
